@@ -124,6 +124,13 @@ export default function Navbar() {
                 Contact
               </Link>
               <Link
+                href="/chat"
+                className="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                AI Chat
+              </Link>
+              <Link
                 href="/volunteer"
                 className="text-orange-600 hover:text-orange-700 block px-3 py-2 text-base font-medium border border-orange-600 hover:border-orange-700 rounded-md mt-2"
                 onClick={() => setIsMenuOpen(false)}
