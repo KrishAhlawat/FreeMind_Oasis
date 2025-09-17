@@ -101,6 +101,68 @@ body {
 }
 
 .scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Counsellor Dashboard Custom Styles */
+.counsellor-dashboard {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.counsellor-sidebar {
+  min-height: 100vh;
+}
+
+/* Chart animations */
+@keyframes chartFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.chart-container {
+  animation: chartFadeIn 1s ease-out;
+}
+
+/* Video card hover effects */
+.video-card {
+  transition: all 0.3s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Pulse animation for status indicators */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.status-online {
+  animation: pulse 2s infinite;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #f97316, #ea580c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
   display: none;  /* Safari and Chrome */
 }
 
