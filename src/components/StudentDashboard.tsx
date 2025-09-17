@@ -252,7 +252,7 @@ export default function FreeMindDashboard() {
             <Card className="bg-white border-0 shadow-sm">
               <CardContent className="p-6">
                 <h3 className="font-semibold text-[#23262f] mb-4">
-                  What's your mood like today?
+                  What&apos;s your mood like today?
                 </h3>
                 <div className="flex justify-between items-center mb-4">
                   <div className="text-center">
@@ -286,7 +286,7 @@ export default function FreeMindDashboard() {
             <Card className="bg-white border-0 shadow-sm">
               <CardContent className="p-6">
                 <h3 className="font-semibold text-[#23262f] mb-4">
-                  We'd love to know how you feel
+                  We&apos;d love to know how you feel
                 </h3>
                 <textarea
                   className="w-full h-24 p-3 border border-[#e4e4e4] rounded-lg resize-none text-sm"

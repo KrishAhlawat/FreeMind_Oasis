@@ -98,7 +98,7 @@ export default function SignUpPage() {
                       htmlFor="terms"
                       className="text-sm text-[#7f8c8d] leading-relaxed"
                     >
-                      Creating an account means you're okay with our Terms of
+                      Creating an account means you&apos;re okay with our Terms of
                       Service, Privacy policy and default Notification Settings
                     </label>
                   </div>

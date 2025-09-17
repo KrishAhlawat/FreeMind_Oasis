@@ -25,7 +25,7 @@ export default function RegistrationPanel() {
     campusLivingStatus: "",
   });
 
-  const handleInputChange = (e: { target: { id: any; value: any } }) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { id, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
@@ -38,7 +38,7 @@ export default function RegistrationPanel() {
     }
   };
 
-  const handleSelectChange = (name: any, value: any) => {
+  const handleSelectChange = (name: string, value: string) => {
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
