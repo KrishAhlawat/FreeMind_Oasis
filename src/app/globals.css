@@ -3,9 +3,6 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -47,6 +44,81 @@ body {
 
 .animation-delay-2000 {
   animation-delay: 2s;
+}
+
+/* Volunteer Dashboard Custom Styles */
+.volunteer-dashboard {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.volunteer-sidebar {
+  min-height: 100vh;
+}
+
+.volunteer-messaging {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-list {
+  height: calc(100vh - 120px);
+  overflow-y: auto;
+}
+
+.messages-container {
+  height: calc(100vh - 140px);
+  overflow-y: auto;
+}
+
+/* Custom scrollbar */
+.chat-list::-webkit-scrollbar,
+.messages-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-list::-webkit-scrollbar-track,
+.messages-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.chat-list::-webkit-scrollbar-thumb,
+.messages-container::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+.chat-list::-webkit-scrollbar-thumb:hover,
+.messages-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Hide scrollbar */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .volunteer-dashboard {
+    flex-direction: column;
+  }
+  
+  .volunteer-sidebar {
+    width: 100%;
+    min-height: auto;
+    height: auto;
+  }
+  
+  .volunteer-messaging {
+    height: calc(100vh - 200px);
+  }
 }
 
 .animation-delay-4000 {

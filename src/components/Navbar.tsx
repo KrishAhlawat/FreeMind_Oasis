@@ -124,6 +124,13 @@ export default function Navbar() {
                 Contact
               </Link>
               <Link
+                href="/volunteer"
+                className="text-orange-600 hover:text-orange-700 block px-3 py-2 text-base font-medium border border-orange-600 hover:border-orange-700 rounded-md mt-2"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Volunteer Dashboard
+              </Link>
+              <Link
                 href="#get-started"
                 className="bg-blue-600 hover:bg-blue-700 text-white block px-3 py-2 rounded-md text-base font-medium mt-4"
                 onClick={() => setIsMenuOpen(false)}
